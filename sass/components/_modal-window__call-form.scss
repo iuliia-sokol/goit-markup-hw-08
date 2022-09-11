@@ -1,0 +1,138 @@
+.call-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: $txt-paragraph-grey;
+
+  &__offer {
+    align-self: center;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $txt-main;
+  }
+
+  &__wrapper {
+    width: 100%;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+  }
+
+  &__input {
+    width: 100%;
+    height: 40px;
+    padding: 12px 12px 12px 12px;
+    text-indent: 30px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: $txt-main;
+    @include transition(border-color);
+  }
+
+  &__icon {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    fill: $txt-main;
+    @include transition(fill);
+  }
+
+  &__textarea {
+    width: 100%;
+    max-height: 120px;
+    padding: 12px 16px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    overflow: scroll;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: $txt-main;
+    @include transition(border-color);
+
+    &::placeholder {
+      font-size: 12px;
+      line-height: 1.167;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+    }
+  }
+
+  &__input:focus + &__icon {
+    fill: $accent-blue;
+  }
+
+  &__input:focus,
+  &__textarea:focus {
+    border-color: $accent-blue;
+  }
+
+  &__btn {
+    align-self: center;
+  }
+}
+
+.checkbox {
+  margin-bottom: 30px;
+  align-self: center;
+
+  &__label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+  }
+
+  &__input {
+    margin-right: 7px;
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+    fill: none;
+    background-image: url(../images/checkbox-empty.svg);
+    background-position: center;
+    background-size: contain;
+    background-origin: border-box;
+    border-radius: 2px;
+    @include transition(fill, background-color, background-image);
+    // transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    //   background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    //   background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link {
+    margin-left: 2px;
+    text-decoration-line: underline;
+    color: $accent-blue;
+  }
+
+  &__input:checked + &__icon {
+    background-image: none;
+    fill: $white;
+    background-color: $accent-blue;
+  }
+}

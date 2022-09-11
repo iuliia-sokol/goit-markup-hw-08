@@ -1,0 +1,41 @@
+.priorities {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+  }
+
+  &__item {
+    width: calc((100% - 90px) / 4);
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $txt-paragraph-grey;
+  }
+
+  &__wrapper {
+    @extend %flex-center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: $light-grey;
+    border-radius: 4px;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 70px;
+    height: 70px;
+  }
+}

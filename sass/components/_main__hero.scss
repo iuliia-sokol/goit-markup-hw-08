@@ -1,0 +1,42 @@
+.hero {
+  min-width: 1200px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1600px;
+  background-color: $bg-hero-alt;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero-bg-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+
+  &__container {
+    width: 696px;
+    margin: 0 auto;
+  }
+  &__header {
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $white;
+  }
+  &__btn {
+    min-width: 216px;
+    min-height: 50px;
+    @include transition(background-color, box-shadow);
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      background-color: $bg-btn-active;
+    }
+  }
+}
