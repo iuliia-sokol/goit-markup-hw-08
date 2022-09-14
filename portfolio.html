@@ -89,6 +89,7 @@
               id="filter-btn-1"
               value="all"
               class="filter__input visually-hidden"
+              data-f="all"
             />
             <label
               for="filter-btn-1"
@@ -101,6 +102,7 @@
               id="filter-btn-2"
               value="web"
               class="filter__input visually-hidden"
+              data-f="web"
             />
             <label for="filter-btn-2" class="btn filter__btn">Веб-сайти</label>
             <input
@@ -109,6 +111,7 @@
               id="filter-btn-3"
               value="apps"
               class="filter__input visually-hidden"
+              data-f="apps"
             />
             <label for="filter-btn-3" class="btn filter__btn">Додатки</label>
             <input
@@ -117,6 +120,7 @@
               id="filter-btn-4"
               value="design"
               class="filter__input visually-hidden"
+              data-f="design"
             />
             <label for="filter-btn-4" class="btn filter__btn">Дизайн</label>
             <input
@@ -125,13 +129,14 @@
               id="filter-btn-5"
               value="marketing"
               class="filter__input visually-hidden"
+              data-f="marketing"
             />
             <label for="filter-btn-5" class="btn filter__btn">Маркетинг</label>
           </div>
           <!-- Projects display -->
           <ul class="list gallery">
             <!-- Технокряк -->
-            <li class="gallery__item">
+            <li class="gallery__item web all">
               <a href="#" class="links gallery__link">
                 <div class="gallery__overlay">
                   <img
@@ -154,7 +159,7 @@
               </a>
             </li>
             <!-- Постер New Orlean vs Golden Star -->
-            <li class="gallery__item">
+            <li class="gallery__item design all">
               <a href="#" class="links gallery__link">
                 <div class="gallery__overlay">
                   <img
@@ -179,7 +184,7 @@
               </a>
             </li>
             <!-- Ресторан Seafood -->
-            <li class="gallery__item">
+            <li class="gallery__item apps all">
               <a href="#" class="links gallery__link">
                 <div class="gallery__overlay">
                   <img
@@ -202,7 +207,7 @@
               </a>
             </li>
             <!-- Проєкт Prime -->
-            <li class="gallery__item">
+            <li class="gallery__item marketing all">
               <a href="#" class="links gallery__link">
                 <div class="gallery__overlay">
                   <img
@@ -225,7 +230,7 @@
               </a>
             </li>
             <!-- Проєкт Boxes -->
-            <li class="gallery__item">
+            <li class="gallery__item apps all">
               <a href="#" class="links gallery__link">
                 <div class="gallery__overlay">
                   <img
@@ -248,7 +253,7 @@
               </a>
             </li>
             <!-- Inspiration has no Borders -->
-            <li class="gallery__item">
+            <li class="gallery__item web all">
               <a href="#" class="links gallery__link">
                 <div class="gallery__overlay">
                   <img
@@ -271,7 +276,7 @@
               </a>
             </li>
             <!-- Видання Limited Edition -->
-            <li class="gallery__item">
+            <li class="gallery__item design all">
               <a href="#" class="links gallery__link">
                 <div class="gallery__overlay">
                   <img
@@ -294,7 +299,7 @@
               </a>
             </li>
             <!-- Проєкт LAB -->
-            <li class="gallery__item">
+            <li class="gallery__item marketing all">
               <a href="#" class="links gallery__link">
                 <div class="gallery__overlay">
                   <img
@@ -317,7 +322,7 @@
               </a>
             </li>
             <!-- Growing Business -->
-            <li class="gallery__item">
+            <li class="gallery__item apps all">
               <a href="#" class="links gallery__link">
                 <div class="gallery__overlay">
                   <img
@@ -453,5 +458,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/filter.js"></script>
   </body>
 </html>

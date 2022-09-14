@@ -98,6 +98,11 @@ ul {
   display: block;
 }
 
+.hide {
+  position: absolute;
+  opacity: 0;
+}
+
 .logo {
   display: block;
   font-family: "Raleway";
@@ -871,7 +876,9 @@ ul {
   gap: 30px;
 }
 .gallery__item {
-  width: calc((100% - 60px) / 3);
+  display: inline-block;
+  -ms-flex-preferred-size: calc((100% - 60px) / 3);
+      flex-basis: calc((100% - 60px) / 3);
 }
 .gallery__meta-wrapper {
   padding: 20px 24px 19px 24px;
