@@ -98,11 +98,6 @@ ul {
   display: block;
 }
 
-.hide {
-  position: absolute;
-  opacity: 0;
-}
-
 .logo {
   display: block;
   font-family: "Raleway";
@@ -725,7 +720,7 @@ ul {
 }
 .call-form__textarea {
   width: 100%;
-  min-height: 120px;
+  height: 120px;
   padding: 12px 16px;
   margin-top: 4px;
   margin-bottom: 20px;
@@ -827,6 +822,17 @@ ul {
   background-image: none;
   fill: #ffffff;
   background-color: #2196f3;
+}
+
+.hide {
+  position: absolute;
+  opacity: 0;
+  min-width: 0;
+  min-height: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  pointer-events: none;
 }
 
 .filter {

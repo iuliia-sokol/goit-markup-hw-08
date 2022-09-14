@@ -6,6 +6,7 @@
   &__item {
     display: inline-block;
     flex-basis: calc((100% - 60px) / 3);
+    // @include transition(opacity);
   }
 
   &__meta-wrapper {
