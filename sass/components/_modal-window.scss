@@ -34,27 +34,3 @@
     transform: translate(-50%, -50%) scale(2);
   }
 }
-
-.close-btn {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  @extend %flex-center;
-  background-color: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 100%;
-  cursor: pointer;
-
-  &__icon {
-    width: 18px;
-    height: 18px;
-    @include transition(fill);
-
-    .close-btn:hover &,
-    .close-btn:focus & {
-      fill: $accent-blue;
-    }
-  }
-}
