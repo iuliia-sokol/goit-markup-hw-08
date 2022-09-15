@@ -24,57 +24,128 @@
     <!-- Header-->
     <header class="header">
       <div class="container header__container">
-        <nav class="navigation">
+        <div class="header__logo-wrapper">
           <!--Logo-->
           <a href="./index.html" class="links logo navigation__logo"
             ><span class="logo__accent">Web</span>Studio</a
           >
-          <!--Browser-->
-          <ul class="list navigation__menu menu">
-            <li class="menu__item">
+          <button
+            class="menu-btn js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="menu-btn__icon">
+              <!-- <use href="./images/icons.svg#icon-close-btn" class="menu-btn__close"></use> -->
+              <use
+                href="./images/icons.svg#icon-menu"
+                class="menu-btn__open"
+              ></use>
+            </svg>
+          </button>
+        </div>
+        <!--Browser-->
+        <div class="header__content js-menu-container">
+          <button
+            class="menu-btn menu-btn--close js-close-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="menu-btn__icon">
+              <use
+                href="./images/icons.svg#icon-close-btn"
+                class="menu-btn__close"
+              ></use>
+              <!-- <use
+                href="./images/icons.svg#icon-menu"
+                class="menu-btn__open"
+              ></use> -->
+            </svg>
+          </button>
+          <nav class="navigation">
+            <ul class="list navigation__menu menu">
+              <li class="menu__item">
+                <a
+                  href="./index.html"
+                  class="links links--selected menu__link menu__link--current"
+                  >Студія</a
+                >
+              </li>
+              <li class="menu__item">
+                <a
+                  href="./portfolio.html"
+                  class="links links--selected menu__link"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="#" class="links links--selected menu__link"
+                  >Контакти</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <!--Contact links-->
+          <ul class="list navigation__contacts contacts">
+            <li class="contacts__item">
+              <ul class="list header-socialmedia">
+                <li class="header-socialmedia__item">
+                  <a
+                    href="#"
+                    aria-label="Посилання на Інстаграм"
+                    class="links header-socialmedia__link"
+                    >Instagram
+                  </a>
+                </li>
+                <li class="header-socialmedia__item">
+                  <a
+                    href="#"
+                    aria-label="Посилання на Твіттер"
+                    class="links header-socialmedia__link"
+                    >Twitter
+                  </a>
+                </li>
+                <li class="header-socialmedia__item">
+                  <a
+                    href="#"
+                    aria-label="Посилання на Фейсбук"
+                    class="links header-socialmedia__link"
+                    >Facebook
+                  </a>
+                </li>
+                <li class="header-socialmedia__item">
+                  <a
+                    href="#"
+                    aria-label="Посилання на Лінкдін"
+                    class="links header-socialmedia__link"
+                    >LinkedIn
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="contacts__item">
               <a
-                href="./index.html"
-                class="links links--selected menu__link menu__link--current"
-                >Студія</a
+                href="mailto:info@devstudio.com"
+                class="links links--selected contacts__link contacts__link--email"
+              >
+                <svg class="contacts__icon email">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+                info@devstudio.com</a
               >
             </li>
-            <li class="menu__item">
+            <li class="contacts__item">
               <a
-                href="./portfolio.html"
-                class="links links--selected menu__link"
-                >Портфоліо</a
+                href="tel:++380961111111"
+                class="links links--selected contacts__link"
               >
-            </li>
-            <li class="menu__item">
-              <a href="#" class="links links--selected menu__link">Контакти</a>
+                <svg class="contacts__icon phone">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-        <!--Contact links-->
-        <ul class="list navigation__contacts contacts">
-          <li class="contacts__item">
-            <a
-              href="mailto:info@devstudio.com"
-              class="links links--selected contacts__link"
-            >
-              <svg class="contacts__icon">
-                <use href="./images/icons.svg#icon-email"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts__item">
-            <a
-              href="tel:++380961111111"
-              class="links links--selected contacts__link"
-            >
-              <svg class="contacts__icon">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
     <!-- Main content-->
@@ -689,6 +760,13 @@
         </div>
       </div>
     </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal-form(my).js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

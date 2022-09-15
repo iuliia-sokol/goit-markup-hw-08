@@ -27,3 +27,11 @@ document.addEventListener("keydown", function (e) {
     modalForm.reset();
   }
 });
+
+// const form = document.getElementById("myForm");
+
+// form.addEventListener("submit", (e) => {
+//   // действия с данными
+//   e.preventDefault();
+//   e.target.reset(); // очищаем форму
+// });
