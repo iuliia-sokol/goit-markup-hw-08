@@ -120,9 +120,6 @@
     background-origin: border-box;
     border-radius: 2px;
     @include transition(fill, background-color, background-image);
-    // transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    //   background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    //   background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__link {
     margin-left: 2px;

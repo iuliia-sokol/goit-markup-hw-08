@@ -1,7 +1,12 @@
+.header {
+  &__container {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 480px) {
   .header {
     &__container {
-      min-width: 480px;
+      width: 480px;
     }
   }
 }
@@ -218,7 +223,8 @@
     }
   }
 }
-@media screen and (min-width: 1600px) {
+
+@media screen and (min-width: 1200px) {
   .header {
     &__container {
       min-width: 1200px;
