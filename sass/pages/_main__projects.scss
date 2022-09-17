@@ -1,37 +1,43 @@
 .projects {
-  padding-top: 0px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .projects {
+    display: block;
+    padding-top: 0px;
 
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 30px;
-  }
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 30px;
+    }
 
-  &__item {
-    position: relative;
-    width: calc((100% - 60px) / 3);
-  }
+    &__item {
+      position: relative;
+      width: calc((100% - 60px) / 3);
+    }
 
-  /* .projects__item + .projects__item {
+    /* .projects__item + .projects__item {
   margin-left: 30px;
 } */
 
-  &__title {
-    display: block;
-    width: 100%;
-    min-height: 70px;
-    padding-top: 27px;
-    padding-bottom: 27px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-    background-color: rgba(47, 48, 58, 0.8);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.143;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $white;
+    &__title {
+      display: block;
+      width: 100%;
+      min-height: 70px;
+      padding-top: 27px;
+      padding-bottom: 27px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      text-align: center;
+      background-color: rgba(47, 48, 58, 0.8);
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.143;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: $white;
+    }
   }
 }
