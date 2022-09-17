@@ -239,13 +239,8 @@
     justify-content: center;
 
     &__link {
-      display: inline-flex;
-      align-items: center;
-      font-weight: 500;
       font-size: 14px;
       line-height: 1.143;
-      letter-spacing: 0.02em;
-      color: $txt-main;
       @include transition(color);
     }
 
@@ -254,11 +249,7 @@
     }
 
     &__icon {
-      width: 14px;
-      height: 14px;
       margin-right: 10px;
-      fill: $txt-paragraph-grey;
-      @include transition(fill);
     }
   }
 }
