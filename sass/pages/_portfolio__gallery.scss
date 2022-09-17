@@ -1,22 +1,26 @@
 .gallery {
+  width: 100%;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 30px;
 
   &__item {
-    display: inline-block;
-    flex-basis: calc((100% - 60px) / 3);
-    // @include transition(opacity);
+    width: 100%;
   }
 
   &__meta-wrapper {
-    padding: 20px 24px 19px 24px;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px 24px;
     background-color: $white;
     border-right: 1px solid $gallery-item-border;
     border-left: 1px solid $gallery-item-border;
     border-bottom: 1px solid $gallery-item-border;
   }
-
   &__title {
     margin-bottom: 4px;
     font-weight: 700;
@@ -24,16 +28,20 @@
     line-height: 2;
     letter-spacing: 0.06em;
   }
-
   &__category {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: $txt-paragraph-grey;
   }
-
   &__link {
-    display: inline-block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: stretch;
+    align-content: stretch;
     @include transition(box-shadow);
 
     &:hover,
@@ -47,21 +55,21 @@
     position: relative;
     overflow: hidden;
   }
-
   &__description {
     display: block;
     width: 100%;
     height: 100%;
-    padding: 63px 24px;
+    padding: 15px 24px;
     position: absolute;
     bottom: 0;
     left: 0;
     align-items: center;
     background-color: $portfolio-descr-overlay;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.56;
     letter-spacing: 0.03em;
     color: $white;
+    overflow-y: scroll;
     opacity: 0;
     transform: translateY(100%);
     @include transition(transform, opacity);
@@ -70,6 +78,49 @@
     .gallery__link:focus & {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .gallery {
+    &__item {
+      width: 450px;
+    }
+
+    &__image {
+      max-width: 450px;
+    }
+    &__description {
+      padding: 77px 24px;
+      font-size: 18px;
+      overflow-y: auto;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    &__item {
+      width: calc((100% - 30px) / 2);
+    }
+    &__image {
+      max-width: 354px;
+    }
+    &__description {
+      padding: 49px 24px 77px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    &__item {
+      flex-basis: calc((100% - 60px) / 3);
+    }
+    &__image {
+      max-width: 370px;
+    }
+    &__description {
+      padding: 63px 24px;
     }
   }
 }
