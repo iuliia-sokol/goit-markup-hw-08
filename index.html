@@ -26,7 +26,10 @@
       <div class="container header__container">
         <div class="header__logo-wrapper">
           <!--Logo-->
-          <a href="./index.html" class="links logo navigation__logo"
+          <a
+            href="./index.html"
+            class="links logo navigation__logo"
+            aria-label="перейти на домашню сторінку"
             ><span class="logo__accent">Web</span>Studio</a
           >
           <button
@@ -35,7 +38,6 @@
             aria-controls="mobile-menu"
           >
             <svg class="menu-btn__icon">
-              <!-- <use href="./images/icons.svg#icon-close-btn" class="menu-btn__close"></use> -->
               <use
                 href="./images/icons.svg#icon-menu"
                 class="menu-btn__open"
@@ -55,10 +57,6 @@
                 href="./images/icons.svg#icon-close-btn"
                 class="menu-btn__close"
               ></use>
-              <!-- <use
-                href="./images/icons.svg#icon-menu"
-                class="menu-btn__open"
-              ></use> -->
             </svg>
           </button>
           <nav class="navigation">
@@ -251,15 +249,26 @@
       </section>
       <!--Staff-->
       <section class="section staff">
-        <div class="container">
+        <div class="container staff__container">
           <h2 class="section__header">Наша команда</h2>
           <ul class="list staff__list">
             <li class="staff__item">
               <img
-                src="./images/igor-demyanenko.jpg"
+                srcset="
+                  ./images/staff/igor-demyanenko/igor-demyanenko-450-1x-min.jpg  450w,
+                  ./images/staff/igor-demyanenko/igor-demyanenko-450-2x-min.jpg  900w,
+                  ./images/staff/igor-demyanenko/igor-demyanenko-450-3x-min.jpg 1350w,
+                  ./images/staff/igor-demyanenko/igor-demyanenko-354-1x-min.jpg  354w,
+                  ./images/staff/igor-demyanenko/igor-demyanenko-354-2x-min.jpg  708w,
+                  ./images/staff/igor-demyanenko/igor-demyanenko-354-3x-min.jpg 1062w,
+                  ./images/staff/igor-demyanenko/igor-demyanenko-270-1x-min.jpg  270w,
+                  ./images/staff/igor-demyanenko/igor-demyanenko-270-2x-min.jpg  540w,
+                  ./images/staff/igor-demyanenko/igor-demyanenko-270-3x-min.jpg  810w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/staff/igor-demyanenko/igor-demyanenko-450-1x-min.jpg"
                 alt="Фото Ігоря Дем'яненка"
-                width="270"
-                class="display-image"
+                class="display-image staff__img"
               />
               <div class="staff__meta">
                 <h3 class="staff__name">Ігор Дем'яненко</h3>
@@ -314,10 +323,21 @@
             </li>
             <li class="staff__item">
               <img
-                src="./images/olga-repina.jpg"
+                srcset="
+                  ./images/staff/olga-repina/olga-repina-450-1x-min.jpg  450w,
+                  ./images/staff/olga-repina/olga-repina-450-2x-min.jpg  900w,
+                  ./images/staff/olga-repina/olga-repina-450-3x-min.jpg 1350w,
+                  ./images/staff/olga-repina/olga-repina-354-1x-min.jpg  354w,
+                  ./images/staff/olga-repina/olga-repina-354-2x-min.jpg  708w,
+                  ./images/staff/olga-repina/olga-repina-354-3x-min.jpg 1062w,
+                  ./images/staff/olga-repina/olga-repina-270-1x-min.jpg  270w,
+                  ./images/staff/olga-repina/olga-repina-270-2x-min.jpg  540w,
+                  ./images/staff/olga-repina/olga-repina-270-3x-min.jpg  810w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/staff/olga-repina/olga-repina-450-1x-min.jpg"
                 alt="Фото Ольги Рєпіної"
-                width="270"
-                class="display-image"
+                class="display-image staff__img"
               />
               <div class="staff__meta">
                 <h3 class="staff__name">Ольга Рєпіна</h3>
@@ -372,10 +392,21 @@
             </li>
             <li class="staff__item">
               <img
-                src="./images/mykola-tarasov.jpg"
+                srcset="
+                  ./images/staff/mykola-tarasov/mykola-tarasov-450-1x-min.jpg  450w,
+                  ./images/staff/mykola-tarasov/mykola-tarasov-450-2x-min.jpg  900w,
+                  ./images/staff/mykola-tarasov/mykola-tarasov-450-3x-min.jpg 1350w,
+                  ./images/staff/mykola-tarasov/mykola-tarasov-354-1x-min.jpg  354w,
+                  ./images/staff/mykola-tarasov/mykola-tarasov-354-2x-min.jpg  708w,
+                  ./images/staff/mykola-tarasov/mykola-tarasov-354-3x-min.jpg 1062w,
+                  ./images/staff/mykola-tarasov/mykola-tarasov-270-1x-min.jpg  270w,
+                  ./images/staff/mykola-tarasov/mykola-tarasov-270-2x-min.jpg  540w,
+                  ./images/staff/mykola-tarasov/mykola-tarasov-270-3x-min.jpg  810w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/staff/mykola-tarasov/mykola-tarasov-450-1x-min.jpg"
                 alt="Фото Миколи Тарасова"
-                width="270"
-                class="display-image"
+                class="display-image staff__img"
               />
               <div class="staff__meta">
                 <h3 class="staff__name">Микола Тарасов</h3>
@@ -430,10 +461,21 @@
             </li>
             <li class="staff__item">
               <img
-                src="./images/myhailo-yermakov.jpg"
+                srcset="
+                  ./images/staff/myhailo-yermakov/myhailo-yermakov-450-1x-min.jpg  450w,
+                  ./images/staff/myhailo-yermakov/myhailo-yermakov-450-2x-min.jpg  900w,
+                  ./images/staff/myhailo-yermakov/myhailo-yermakov-450-3x-min.jpg 1350w,
+                  ./images/staff/myhailo-yermakov/myhailo-yermakov-354-1x-min.jpg  354w,
+                  ./images/staff/myhailo-yermakov/myhailo-yermakov-354-2x-min.jpg  708w,
+                  ./images/staff/myhailo-yermakov/myhailo-yermakov-354-3x-min.jpg 1062w,
+                  ./images/staff/myhailo-yermakov/myhailo-yermakov-270-1x-min.jpg  270w,
+                  ./images/staff/myhailo-yermakov/myhailo-yermakov-270-2x-min.jpg  540w,
+                  ./images/staff/myhailo-yermakov/myhailo-yermakov-270-3x-min.jpg  810w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/staff/myhailo-yermakov/myhailo-yermakov-450-1x-min.jpg"
                 alt="Фото Михайла Єрмакова"
-                width="270"
-                class="display-image"
+                class="display-image staff__img"
               />
               <div class="staff__meta">
                 <h3 class="staff__name">Михайло Єрмаков</h3>
