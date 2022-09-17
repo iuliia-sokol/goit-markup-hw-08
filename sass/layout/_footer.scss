@@ -1,15 +1,24 @@
 .footer {
-  min-width: 1200px;
+  width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $bg-footer;
 
   &__container {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 60px;
   }
-
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 60px;
+  }
   &__offer {
     margin-bottom: 20px;
     font-weight: 700;
@@ -17,6 +26,7 @@
     line-height: 1.143;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
     color: $white;
   }
 }
@@ -27,10 +37,11 @@
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 0.03em;
+    text-align: center;
   }
 
   &__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
   }
 
   &__link {
@@ -42,24 +53,169 @@
   }
 }
 
-.subsctiption__input {
-  width: 358px;
-  height: 50px;
-  padding: 15px 16px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  outline: none;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  background-color: transparent;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: $white;
+.subscription {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 
-  &::placeholder {
+  &__input {
+    min-width: 250px;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    outline: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    background-color: transparent;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: $white;
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+    }
   }
 }
+
+@media screen and (min-width: 480px) {
+  .footer {
+    &__container {
+      width: 480px;
+    }
+  }
+  .subscription {
+    &__input {
+      width: 450px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    &__container {
+      width: 768px;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    &__wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  .subscription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    &__container {
+      width: 1200px;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: baseline;
+      column-gap: 93px;
+    }
+    &__wrapper {
+      width: auto;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: left;
+      align-items: baseline;
+      column-gap: 70px;
+    }
+    &__offer {
+      text-align: left;
+    }
+  }
+  .address {
+    &__list {
+      text-align: left;
+      white-space: nowrap;
+    }
+    &__item:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+  .subscription {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    column-gap: 12px;
+
+    &__input {
+      margin-bottom: 0;
+    }
+  }
+}
+// .footer {
+//   min-width: 1200px;
+//   padding-top: 60px;
+//   padding-bottom: 60px;
+//   background-color: $bg-footer;
+
+//   &__container {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: baseline;
+//   }
+
+//
+// }
+
+// .address {
+//   &__list {
+//     font-style: normal;
+//     font-size: 14px;
+//     line-height: 1.5;
+//     letter-spacing: 0.03em;
+//   }
+
+//   &__item:not(:last-child) {
+//     margin-bottom: 9px;
+//   }
+
+//   &__link {
+//     color: $txt-adress-link-transparent;
+
+//     &--accent {
+//       color: $white;
+//     }
+//   }
+// }
+
+// .subsctiption__input {
+//   width: 358px;
+//   height: 50px;
+//   padding: 15px 16px;
+//   border: 1px solid rgba(255, 255, 255, 0.3);
+//   border-radius: 4px;
+//   outline: none;
+//   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+//   background-color: transparent;
+//   font-size: 16px;
+//   line-height: 1.25;
+//   letter-spacing: 0.03em;
+//   color: $white;
+
+//   &::placeholder {
+//     font-size: 16px;
+//     line-height: 1.25;
+//     letter-spacing: 0.03em;
+//     color: rgba(255, 255, 255, 0.6);
+//   }
+// }

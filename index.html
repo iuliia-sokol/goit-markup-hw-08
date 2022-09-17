@@ -624,89 +624,91 @@
     <!--Footer-->
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer__address">
-          <!--Logo-->
-          <a href="./index.html" class="links logo footer__logo"
-            ><span class="logo__accent">Web</span>Studio</a
-          >
-          <!--Address-->
-          <address class="address">
-            <ul class="list address__list">
-              <li class="address__item">
+        <div class="footer__wrapper">
+          <div class="footer__address">
+            <!--Logo-->
+            <a href="./index.html" class="links logo footer__logo"
+              ><span class="logo__accent">Web</span>Studio</a
+            >
+            <!--Address-->
+            <address class="address">
+              <ul class="list address__list">
+                <li class="address__item">
+                  <a
+                    href="https://goo.gl/maps/vt1rgCMrE2ZLCeFa9"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="links links--selected address__link--accent"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="links links--selected address__link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a
+                    href="tel:++380961111111"
+                    class="links links--selected address__link"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <!-- Social media -->
+          <div class="footer__socialmedia">
+            <p class="footer__offer">Приєднуйтесь</p>
+            <ul class="list socialmedia">
+              <li class="socialmedia__item">
                 <a
-                  href="https://goo.gl/maps/vt1rgCMrE2ZLCeFa9"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="links links--selected address__link--accent"
-                  >м. Київ, пр-т Лесі Українки, 26</a
+                  href="#"
+                  aria-label="Посилання на Інстаграм"
+                  class="socialmedia__link socialmedia__link--dark"
                 >
+                  <svg class="socialmedia__icon socialmedia__icon--dark">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
+              <li class="socialmedia__item">
                 <a
-                  href="mailto:info@devstudio.com"
-                  class="links links--selected address__link"
-                  >info@devstudio.com</a
+                  href="#"
+                  aria-label="Посилання на Твіттер"
+                  class="socialmedia__link socialmedia__link--dark"
                 >
+                  <svg class="socialmedia__icon socialmedia__icon--dark">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
+              <li class="socialmedia__item">
                 <a
-                  href="tel:++380961111111"
-                  class="links links--selected address__link"
-                  >+38 096 111 11 11</a
+                  href="#"
+                  aria-label="Посилання на Фейсбук"
+                  class="socialmedia__link socialmedia__link--dark"
                 >
+                  <svg class="socialmedia__icon socialmedia__icon--dark">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socialmedia__item">
+                <a
+                  href="#"
+                  aria-label="Посилання на Лінкдін"
+                  class="socialmedia__link socialmedia__link--dark"
+                >
+                  <svg class="socialmedia__icon socialmedia__icon--dark">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <!-- Social media -->
-        <div class="footer__socialmedia">
-          <p class="footer__offer">Приєднуйтесь</p>
-          <ul class="list socialmedia">
-            <li class="socialmedia__item">
-              <a
-                href="#"
-                aria-label="Посилання на Інстаграм"
-                class="socialmedia__link socialmedia__link--dark"
-              >
-                <svg class="socialmedia__icon socialmedia__icon--dark">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socialmedia__item">
-              <a
-                href="#"
-                aria-label="Посилання на Твіттер"
-                class="socialmedia__link socialmedia__link--dark"
-              >
-                <svg class="socialmedia__icon socialmedia__icon--dark">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socialmedia__item">
-              <a
-                href="#"
-                aria-label="Посилання на Фейсбук"
-                class="socialmedia__link socialmedia__link--dark"
-              >
-                <svg class="socialmedia__icon socialmedia__icon--dark">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socialmedia__item">
-              <a
-                href="#"
-                aria-label="Посилання на Лінкдін"
-                class="socialmedia__link socialmedia__link--dark"
-              >
-                <svg class="socialmedia__icon socialmedia__icon--dark">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <!-- Subscription form -->
         <div class="footer__subscription">
@@ -719,7 +721,7 @@
                 name="subsctiption"
                 placeholder="E-mail"
                 required
-                class="subsctiption__input"
+                class="subscription__input"
               />
             </label>
             <button type="submit" class="submit-btn footer__submit-btn">
