@@ -13,6 +13,7 @@
   &__icon {
     width: 18px;
     height: 18px;
+    fill: $txt-logo-black;
     @include transition(fill);
 
     .close-btn:hover &,
