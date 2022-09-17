@@ -1,25 +1,28 @@
 .clients {
+  &__container {
+    width: 100%;
+    border: none;
+  }
   &__list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    gap: 30px;
   }
-
   &__link {
     @extend %flex-center;
-    width: 170px;
+    width: 210px;
     min-height: 92px;
     border: 1px solid $icon-grey;
     border-radius: 4px;
     @include transition(border-color);
-
     &:hover,
     &:focus {
       border-color: $accent-blue;
       outline: none;
     }
   }
-
   &__icon {
     width: 106px;
     height: 60px;
@@ -29,6 +32,33 @@
     .clients__link:hover &,
     .clients__link:focus & {
       fill: $accent-blue;
+    }
+  }
+}
+@media screen and (min-width: 480px) {
+  .clients {
+    &__container {
+      width: 480px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients {
+    &__container {
+      width: 768px;
+    }
+    &__link {
+      width: 226px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    &__container {
+      width: 1200px;
+    }
+    &__link {
+      width: 170px;
     }
   }
 }
