@@ -1294,17 +1294,19 @@ ul {
   position: absolute;
   top: 8px;
   right: 8px;
+  z-index: 10;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 100%;
   cursor: pointer;
 }
 .close-btn__icon {
-  width: 11px;
-  height: 11px;
+  width: 18px;
+  height: 18px;
   fill: #000000;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 15;
 }
 .close-btn:hover .close-btn__icon, .close-btn:focus .close-btn__icon {
   fill: #2196f3;
