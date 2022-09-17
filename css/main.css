@@ -1300,8 +1300,8 @@ ul {
   cursor: pointer;
 }
 .close-btn__icon {
-  width: 18px;
-  height: 18px;
+  width: 11px;
+  height: 11px;
   fill: #000000;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
