@@ -212,16 +212,14 @@ ul {
     opacity: 0;
     visibility: 0;
     z-index: 100;
-    -webkit-transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1), visibility 1000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1), visibility 1000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1), opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1), visibility 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1), opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1), visibility 1000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .header__content.is-open {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    -webkit-transition-duration: 400ms;
-            transition-duration: 400ms;
     opacity: 1;
     visibility: 1;
   }
@@ -252,8 +250,6 @@ ul {
     fill: currentColor;
     -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    -webkit-transition-duration: 100ms;
-            transition-duration: 100ms;
   }
   .menu-btn:hover .menu-btn__icon, .menu-btn:focus .menu-btn__icon, .menu-btn:active .menu-btn__icon {
     fill: #2196f3;
@@ -1294,11 +1290,12 @@ ul {
   position: absolute;
   top: 8px;
   right: 8px;
+  padding: 0;
+  margin: 0;
   z-index: 10;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 100%;
-  cursor: pointer;
+  border-radius: 50%;
 }
 .close-btn__icon {
   width: 18px;

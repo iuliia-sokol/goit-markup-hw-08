@@ -5,11 +5,12 @@
   top: 8px;
   right: 8px;
   @extend %flex-center;
+  padding: 0;
+  margin: 0;
   z-index: 10;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 100%;
-  cursor: pointer;
+  border-radius: 50%;
 
   &__icon {
     width: 18px;
