@@ -13,7 +13,7 @@
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     color: $txt-main;
@@ -26,7 +26,6 @@
     position: relative;
     display: flex;
   }
-
   &__input {
     width: 100%;
     height: 40px;
@@ -41,7 +40,6 @@
     color: $txt-main;
     @include transition(border-color);
   }
-
   &__icon {
     width: 18px;
     height: 18px;
@@ -52,7 +50,6 @@
     fill: $txt-main;
     @include transition(fill);
   }
-
   &__textarea {
     width: 100%;
     height: 120px;
@@ -91,21 +88,21 @@
     align-self: center;
   }
 }
-
 .checkbox {
+  display: inline-flex;
   margin-bottom: 30px;
   align-self: center;
 
   &__label {
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    font-size: 14px;
-    line-height: 1.714;
+    font-size: 12px;
+    line-height: 1.167;
     letter-spacing: 0.03em;
-  }
-
-  &__input {
-    margin-right: 7px;
+    white-space: nowrap;
   }
 
   &__icon {
@@ -122,14 +119,30 @@
     @include transition(fill, background-color, background-image);
   }
   &__link {
+    display: inline-block;
     margin-left: 2px;
     text-decoration-line: underline;
     color: $accent-blue;
+    white-space: nowrap;
   }
 
   &__input:checked + &__icon {
     background-image: none;
     fill: $white;
     background-color: $accent-blue;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .call-form {
+    &__offer {
+      line-height: 1.15;
+    }
+  }
+  .checkbox {
+    &__label {
+      font-size: 14px;
+      line-height: 1.714;
+    }
   }
 }

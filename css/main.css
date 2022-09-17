@@ -1255,8 +1255,7 @@ ul {
 }
 
 .modal-window {
-  width: 528px;
-  min-height: 581px;
+  width: calc(100% - 30px);
   padding: 40px;
   position: absolute;
   top: 50%;
@@ -1277,6 +1276,18 @@ ul {
           transform: translate(-50%, -50%) scale(2);
 }
 
+@media screen and (min-width: 480px) {
+  .modal-window {
+    width: 450px;
+    min-height: 509px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-window {
+    width: 528px;
+    min-height: 581px;
+  }
+}
 .close-btn {
   width: 30px;
   height: 30px;
@@ -1323,7 +1334,7 @@ ul {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -1424,23 +1435,30 @@ ul {
 }
 
 .checkbox {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-bottom: 30px;
   -ms-flex-item-align: center;
       align-self: center;
 }
 .checkbox__label {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 14px;
-  line-height: 1.714;
+  font-size: 12px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
-}
-.checkbox__input {
-  margin-right: 7px;
+  white-space: nowrap;
 }
 .checkbox__icon {
   display: inline-block;
@@ -1459,10 +1477,12 @@ ul {
   transition-property: fill, background-color, background-image;
 }
 .checkbox__link {
+  display: inline-block;
   margin-left: 2px;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #2196f3;
+  white-space: nowrap;
 }
 .checkbox__input:checked + .checkbox__icon {
   background-image: none;
@@ -1470,6 +1490,15 @@ ul {
   background-color: #2196f3;
 }
 
+@media screen and (min-width: 1200px) {
+  .call-form__offer {
+    line-height: 1.15;
+  }
+  .checkbox__label {
+    font-size: 14px;
+    line-height: 1.714;
+  }
+}
 .hide {
   position: absolute;
   opacity: 0;

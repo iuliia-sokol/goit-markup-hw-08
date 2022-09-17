@@ -17,8 +17,7 @@
 }
 
 .modal-window {
-  width: 528px;
-  min-height: 581px;
+  width: calc(100% - 30px);
   padding: 40px;
   position: absolute;
   top: 50%;
@@ -32,5 +31,17 @@
 
   .modal-overlay.is-hidden & {
     transform: translate(-50%, -50%) scale(2);
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal-window {
+    width: 450px;
+    min-height: 509px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-window {
+    width: 528px;
+    min-height: 581px;
   }
 }
