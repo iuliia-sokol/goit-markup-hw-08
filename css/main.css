@@ -181,9 +181,11 @@ ul {
     text-align: left;
   }
 }
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .header__container {
   width: 100%;
-  border-bottom: 1px solid #ececec;
 }
 
 @media screen and (min-width: 480px) {
@@ -475,6 +477,7 @@ ul {
   text-align: center;
 }
 .hero__container {
+  padding: 0 15px;
   margin: 0 auto;
 }
 .hero__header {
@@ -521,7 +524,7 @@ ul {
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg/hero-bg-image-768-1x-min.jpg");
   }
   .hero__container {
-    width: 360px;
+    width: 390px;
   }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -543,7 +546,7 @@ ul {
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg/hero-bg-image-1600-1x-min.jpg");
   }
   .hero__container {
-    width: 360px;
+    width: 390px;
   }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -566,7 +569,7 @@ ul {
     max-width: 1600px;
   }
   .hero__container {
-    width: 696px;
+    width: 726px;
   }
   .hero__header {
     font-size: 44px;
@@ -844,6 +847,8 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1117,7 +1122,7 @@ ul {
             flex-direction: column;
   }
   .footer__wrapper {
-    width: 100%;
+    width: 603px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1128,6 +1133,9 @@ ul {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
   .subscription {
     display: -webkit-box;
@@ -1213,6 +1221,7 @@ ul {
             column-gap: 12px;
   }
   .subscription__input {
+    width: 358px;
     margin-bottom: 0;
   }
 }

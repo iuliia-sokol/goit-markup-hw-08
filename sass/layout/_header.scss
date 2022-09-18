@@ -1,7 +1,7 @@
 .header {
+  border-bottom: 1px solid $divider-line;
   &__container {
     width: 100%;
-    border-bottom: 1px solid $divider-line;
   }
 }
 @media screen and (min-width: 480px) {
