@@ -202,10 +202,11 @@ ul {
     position: relative;
   }
   .header__content {
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     padding: 48px 40px;
     background-color: #ffffff;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     -webkit-transform: translateY(-100%);
@@ -213,6 +214,17 @@ ul {
     opacity: 0;
     visibility: 0;
     z-index: 100;
+    overflow: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -263,12 +275,10 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 60px;
   }
   .menu__item:not(:last-child) {
     margin-bottom: 32px;
-  }
-  .menu__item:last-child {
-    margin-bottom: 306px;
   }
   .menu__link {
     display: inline-block;
@@ -466,6 +476,7 @@ ul {
 }
 .hero {
   width: 100%;
+  margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: #c4c4c4;
